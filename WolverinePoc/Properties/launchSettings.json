@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "WolverinePOC": {
+        "commandName": "Project",
+        "launchBrowser": true,
+        "launchUrl": "swagger",
+        "environmentVariables": {
+            "ASPNETCORE_ENVIRONMENT": "Development"
+        },
+        "applicationUrl": "https://localhost:49220;http://localhost:49221"
+    }
+  }
+}
