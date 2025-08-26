@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Configuration
 var rabbitUrl = builder.Configuration.GetSection("RabbitMq").GetValue<string>("Url")!;
-var pgConn = builder.Configuration.GetConnectionString("Postgres")!;
+var pgConn = builder.Configuration.GetConnectionString("DefaultConnection")!;
 
 // Add Wolverine HTTP endpoints (Dead Letter REST API)
 builder.Services.AddWolverineHttp();
